@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JAZ_st_2021_gr2.iml" filepath="$PROJECT_DIR$/JAZ_st_2021_gr2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab01/demo/reflectionsdemo.iml" filepath="$PROJECT_DIR$/lab01/demo/reflectionsdemo.iml" />
     </modules>
   </component>
 </project>
