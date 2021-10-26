@@ -2,6 +2,7 @@ package org.example.tests;
 
 public class Subject{
 
+    @NotNUll
     private String name;
     private int number;
     private boolean isDone;
