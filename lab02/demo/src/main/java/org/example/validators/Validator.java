@@ -1,13 +1,11 @@
 package org.example.validators;
 
-<<<<<<< Updated upstream
-=======
 import org.example.annotations.NotNull;
 import org.example.annotations.Range;
 import org.example.annotations.Regex;
 
 import java.lang.reflect.Field;
->>>>>>> Stashed changes
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,18 +15,10 @@ public class Validator {
         ValidationResult result = new ValidationResult();
         List<String> errors = new ArrayList<>();
         result.setValidatedObject(object);
-<<<<<<< Updated upstream
-
-
-        
-        return null;
-=======
         result.setValid(true);
 
         for( Field f : object.getClass().getDeclaredFields()){
             f.setAccessible(true);
-
-
 
             //NotNull
             if (f.isAnnotationPresent(NotNull.class)) {
@@ -42,7 +32,6 @@ public class Validator {
                     e.printStackTrace();
                 }
             }
-
 
             //Range
             if (f.isAnnotationPresent(Range.class)){
@@ -59,7 +48,6 @@ public class Validator {
                     e.printStackTrace();
                 }
             }
-
 
             //Regex
             if (f.isAnnotationPresent(Regex.class)){
@@ -80,12 +68,8 @@ public class Validator {
                 errors.clear();
             }
 
-
         }
 
-
-
         return result;
->>>>>>> Stashed changes
     }
 }
