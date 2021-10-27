@@ -9,8 +9,8 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 public @interface Range {
 
-   int min();
-   int max();
+   int min() default 0;
+   int max() default 10;
 
    String message() default "number is out of range [0,10]";
 

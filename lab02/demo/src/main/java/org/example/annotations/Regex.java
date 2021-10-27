@@ -12,5 +12,4 @@ public @interface Regex {
     String pattern();
     String message() default "regex error";
 
-
 }
