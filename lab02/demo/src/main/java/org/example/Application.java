@@ -17,4 +17,6 @@ public class Application {
 
 
 
-class Sample{ String name;}
+class Sample{
+    String name;
+}
