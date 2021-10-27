@@ -7,9 +7,14 @@ public class SampleObject {
    // @NotNull
     private String name;
 
+<<<<<<< Updated upstream
 
    // @NotNull
    // @Regex(pattern = "^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$", message = "email should be in correct format")
+=======
+    @NotNull
+    @Regex(pattern = "^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$", message = "email should be in correct format")
+>>>>>>> Stashed changes
     private String email;
 
     //@Range(min=0, max=10)
