@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JAZ_st_2021_gr2.iml" filepath="$PROJECT_DIR$/.idea/JAZ_st_2021_gr2.iml" />
+<<<<<<< Updated upstream
+=======
+      <module fileurl="file://$PROJECT_DIR$/lab02/demo/annotationsdemo.iml" filepath="$PROJECT_DIR$/lab02/demo/annotationsdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab01/demo/reflectionsdemo.iml" filepath="$PROJECT_DIR$/lab01/demo/reflectionsdemo.iml" />
+>>>>>>> Stashed changes
     </modules>
   </component>
 </project>

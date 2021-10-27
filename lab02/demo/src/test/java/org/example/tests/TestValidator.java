@@ -5,8 +5,6 @@ import org.example.validators.Validator;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
@@ -14,10 +12,9 @@ public class TestValidator {
 
     public static Validator validator = new Validator();
 
-
     @Test
     @Order(1)
-    public void test_if_object_with_wrong_fields_is_invalid(){
+    public void test_if_object_with_wrong_fields_is_invalid() throws IllegalAccessException{
         SampleObject sample = new SampleObject(null, "test", 11);
         ValidationResult result = validator.validate(sample);
         assertThat(result.isValid(), is(false));
@@ -26,7 +23,7 @@ public class TestValidator {
     }
 
     @Test
-    public void test_if_object_with_null_name_is_invalid(){
+    public void test_if_object_with_null_name_is_invalid() throws IllegalAccessException{
         SampleObject sample = new SampleObject(null, "a@wp.pl", 5);
         ValidationResult result = validator.validate(sample);
         assertThat(result.isValid(), is(false));
@@ -35,12 +32,9 @@ public class TestValidator {
         assertThat(result.getNotValidFields().keySet(), contains("name"));
         assertThat(result.getNotValidFields().get("name"), hasSize(2));
         assertThat(result.getNotValidFields().get("name"), contains("field is null", "field is empty" ));
-
-
     }
-
-    public void test_if_object_with_incorrect_email_is_invalid(){
-
+    @Test
+    public void test_if_object_with_incorrect_email_is_invalid() throws IllegalAccessException{
         SampleObject sample = new SampleObject("jan", "a", 5);
         ValidationResult result = validator.validate(sample);
         assertThat(result.isValid(), is(false));
@@ -51,7 +45,8 @@ public class TestValidator {
         assertThat(result.getNotValidFields().get("email"), contains("email should be in correct format" ));
     }
 
-    public void test_if_object_with_wrong_number_renge_is_invalid(){
+    @Test
+    public void test_if_object_with_wrong_number_renge_is_invalid() throws IllegalAccessException{
 
         SampleObject sample = new SampleObject("jan", "jan@wp.pl", -1);
         ValidationResult result = validator.validate(sample);
