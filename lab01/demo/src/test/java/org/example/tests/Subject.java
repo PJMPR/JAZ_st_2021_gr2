@@ -1,8 +1,10 @@
 package org.example.tests;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Subject{
 
-    @NotNUll
+    @NotNull
     private String name;
     private int number;
     private boolean isDone;

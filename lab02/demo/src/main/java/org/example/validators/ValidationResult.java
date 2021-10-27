@@ -30,4 +30,13 @@ public class ValidationResult{
         return notValidFields;
     }
 
+    public ValidationResult() {
+
+    }
+    public ValidationResult(Map<String, List<String>> notValidFields, Object validatedObject, boolean isValid) {
+        this.notValidFields = notValidFields;
+        this.validatedObject = validatedObject;
+        this.isValid = isValid;
+    }
+
 }
