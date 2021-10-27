@@ -8,61 +8,57 @@ import org.example.annotations.Regex;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Validator {
 
-    public <TClass> ValidationResult validate(TClass object) {
-        ValidationResult result = new ValidationResult();
-        result.setValidatedObject(object);
-        result.setValid(true);
-
-        for (Field field : object.getClass().getDeclaredFields()) {
-            List<String> errors = new ArrayList<>();
-            field.setAccessible(true);
-
-            if (field.isAnnotationPresent(Range.class)) {
+    public <TClass> ValidationResult validate(TClass object){
+        ValidationResult value = new ValidationResult();
+        value.setValid(true);
+        value.setValidatedObject(object);
+        for (Field f : object.getClass().getDeclaredFields()) {
+            f.setAccessible(true);
+            List<String> erList = new ArrayList<>();
+            if (f.isAnnotationPresent(Regex.class)){
                 try {
-                    int i = (int) field.get(object);
-                    int min = field.getDeclaredAnnotation(Range.class).min();
-                    int max = field.getDeclaredAnnotation(Range.class).max();
+                    if (!f.get(object).toString().matches("^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$")) {
+                        erList.add(f.getAnnotation(Regex.class).message());
+                        value.setValid(false);
 
-                    if (!(i > min && i < max)) {
-                        errors.add(field.getAnnotation(Range.class).message());
-                        result.setValid(false);
                     }
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
+                } catch (IllegalAccessException exception) {
+                    exception.printStackTrace();
                 }
             }
-
-            if (field.isAnnotationPresent(Regex.class)) {
+            if (f.isAnnotationPresent(NotNull.class)) {
                 try {
-                    if (!field.get(object).toString().matches(field.getDeclaredAnnotation(Regex.class).pattern())) {
-                        errors.add(field.getAnnotation(Regex.class).message());
-                        result.setValid(false);
+                    if (Objects.isNull(f.get(object))) {
+                        erList.add(f.getAnnotation(NotNull.class).message());
+                        erList.add(f.getAnnotation(NotNull.class).message2());
+                        value.setValid(false);
+
                     }
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
+                } catch (IllegalAccessException exception) {
+                    exception.printStackTrace();
                 }
             }
-
-            if (field.isAnnotationPresent(NotNull.class)) {
+            if (f.isAnnotationPresent(Range.class)) {
                 try {
-                    if (field.get(object) == null) {
-                        errors.add(field.getAnnotation(NotNull.class).message());
-                        errors.add(field.getAnnotation(NotNull.class).message2());
-                        result.setValid(false);
+                    int number = (int) f.get(object);
+                    if (!(number > 0 && number < 10)) {
+                        erList.add(f.getAnnotation(Range.class).message());
+                        value.setValid(false);
+
                     }
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
+                } catch (IllegalAccessException exception) {
+                    exception.printStackTrace();
                 }
             }
-
-            if (!errors.isEmpty()) {
-                result.getNotValidFields().put(field.getName(), errors);
+            if (!erList.isEmpty()) {
+                value.getNotValidFields().put(f.getName(), erList);
             }
         }
 
-        return result;
+        return value;
     }
 }
