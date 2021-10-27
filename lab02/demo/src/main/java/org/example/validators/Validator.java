@@ -33,7 +33,7 @@ public class Validator {
             if (f.isAnnotationPresent(NotNull.class)) {
                 try {
                     if (Objects.isNull(f.get(object))) {
-                        erList.add(f.getAnnotation(NotNull.class).message());
+                        erList.add(f.getAnnotation(NotNull.class).message1());
                         erList.add(f.getAnnotation(NotNull.class).message2());
                         value.setValid(false);
 
