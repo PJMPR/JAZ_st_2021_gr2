@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73ff56af-4ec1-4ca3-a8b9-f943c508ab19" name="Changes" comment="" />
+    <list default="true" id="73ff56af-4ec1-4ca3-a8b9-f943c508ab19" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lab02/demo/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/src/main/java/org/example/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/src/main/java/org/example/annotations/SomeAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/src/main/java/org/example/annotations/SomeAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/src/main/java/org/example/validators/ValidationResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/src/main/java/org/example/validators/ValidationResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/src/main/java/org/example/validators/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/src/main/java/org/example/validators/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/src/test/java/org/example/tests/SampleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/src/test/java/org/example/tests/SampleObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab02/demo/src/test/java/org/example/tests/TestValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab02/demo/src/test/java/org/example/tests/TestValidator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635360842436</updated>
       <workItem from="1635360844774" duration="26000" />
+      <workItem from="1635360928902" duration="142000" />
     </task>
     <servers />
   </component>

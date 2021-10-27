@@ -1,20 +1,19 @@
 package org.example;
 
-
-import java.lang.reflect.Field;
+import org.example.annotations.NotNull;
+import org.example.validators.Validator;
 
 public class Application {
-    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
-
-        System.out.println("adam@wp.pl".matches("^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$"));
-
-        Sample obj = new Sample();
-        Field f = Sample.class.getDeclaredField("name");
-        System.out.println(
-        f.get(obj)==null);
+    public static void main(String[] args) throws IllegalAccessException {
+        Validator validator= new Validator();
+        validator.validate(new Sample());
     }
 }
 
+class Sample {
+    @NotNull
+    public String name;
+    @NotNull
+    public String nameTwo;
+}
 
-
-class Sample{ String name;}
