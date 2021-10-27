@@ -1,7 +1,7 @@
 package org.example.annotations;
 
 public @interface Regex {
-    String pattern();
+    String pattern() default "^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$";
 
-    String message();
+    String message() default "regex error";
 }

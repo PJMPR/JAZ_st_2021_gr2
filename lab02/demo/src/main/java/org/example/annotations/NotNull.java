@@ -10,6 +10,7 @@ import java.lang.runtime.ObjectMethods;
 @Target(ElementType.FIELD)
 public @interface NotNull {
 
-    String messege() default "field is null";
+    String message() default "field is null";
 
+    String message2() default "field is empty";
 }
