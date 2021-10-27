@@ -5,7 +5,6 @@ import org.example.validators.Validator;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
@@ -17,7 +16,7 @@ public class TestValidator {
 
     @Test
     @Order(1)
-    public void test_if_object_with_wrong_fields_is_invalid(){
+    public void test_if_object_with_wrong_fields_is_invalid() {
         SampleObject sample = new SampleObject(null, "test", 11);
         ValidationResult result = validator.validate(sample);
         assertThat(result.isValid(), is(false));
