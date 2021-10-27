@@ -30,4 +30,8 @@ public class ValidationResult{
         return notValidFields;
     }
 
+    public void setNotValidFields(String key, List<String> value) {
+        notValidFields.put(key, value);
+    }
+
 }
