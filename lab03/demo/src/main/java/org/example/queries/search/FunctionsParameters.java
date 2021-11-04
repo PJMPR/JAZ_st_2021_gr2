@@ -12,18 +12,22 @@ public class FunctionsParameters {
     }
 
     public String getFieldName() {
+
         return fieldName;
     }
 
     public void setFieldName(String fieldName) {
+
         this.fieldName = fieldName;
     }
 
     public Funcs getFunction() {
+
         return function;
     }
 
     public void setFunction(Funcs function) {
+
         this.function = function;
     }
 }

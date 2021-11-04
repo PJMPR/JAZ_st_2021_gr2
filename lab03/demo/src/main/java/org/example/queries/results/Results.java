@@ -13,34 +13,42 @@ public class Results {
     private int currentPage;
 
     public List<Person> getItems() {
+
         return items;
     }
 
     public void setItems(List<Person> items) {
+
         this.items = items;
     }
 
     public List<FunctionResult> getFunctionResults() {
+
         return functionResults;
     }
 
     public void setFunctionResults(List<FunctionResult> functionResults) {
+
         this.functionResults = functionResults;
     }
 
     public int getPages() {
+
         return pages;
     }
 
     public void setPages(int pages) {
+
         this.pages = pages;
     }
 
     public int getCurrentPage() {
+
         return currentPage;
     }
 
     public void setCurrentPage(int currentPage) {
+
         this.currentPage = currentPage;
     }
 }

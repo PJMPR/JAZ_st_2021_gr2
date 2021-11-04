@@ -11,18 +11,22 @@ public class Page {
     }
 
     public int getSize() {
+
         return size;
     }
 
     public void setSize(int size) {
+
         this.size = size;
     }
 
     public int getPageNumber() {
+
         return pageNumber;
     }
 
     public void setPageNumber(int pageNumber) {
+
         this.pageNumber = pageNumber;
     }
 }

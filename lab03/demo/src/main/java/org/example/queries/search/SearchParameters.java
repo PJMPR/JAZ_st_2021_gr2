@@ -17,38 +17,47 @@ public class SearchParameters {
     private Page page;
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public String getSurname() {
+
         return surname;
     }
 
     public void setSurname(String surname) {
+
         this.surname = surname;
     }
 
     public int getAgeFrom() {
+
         return ageFrom;
     }
 
     public void setAgeFrom(int ageFrom) {
+
         this.ageFrom = ageFrom;
     }
 
     public int getAgeTo() {
+
         return ageTo;
     }
 
     public void setAgeTo(int ageTo) {
+
         this.ageTo = ageTo;
     }
 
     public double getIncomeFrom() {
+
         return incomeFrom;
     }
 
@@ -57,34 +66,42 @@ public class SearchParameters {
     }
 
     public double getIncomeTo() {
+
         return incomeTo;
     }
 
     public void setIncomeTo(double incomeTo) {
+
         this.incomeTo = incomeTo;
     }
 
     public List<Gender> getSelectedGenders() {
+
         return selectedGenders;
     }
 
     public void setSelectedGenders(List<Gender> selectedGenders) {
+
         this.selectedGenders = selectedGenders;
     }
 
     public List<FunctionsParameters> getFunctions() {
+
         return functions;
     }
 
     public void setFunctions(List<FunctionsParameters> functions) {
+
         this.functions = functions;
     }
 
     public Page getPage() {
+
         return page;
     }
 
     public void setPage(Page page) {
+
         this.page = page;
     }
 }

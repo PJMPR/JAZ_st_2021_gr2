@@ -8,18 +8,22 @@ public class FunctionResult {
     private double value;
 
     public Funcs getFunction() {
+
         return function;
     }
 
     public void setFunction(Funcs function) {
+
         this.function = function;
     }
 
     public String getFieldName() {
+
         return fieldName;
     }
 
     public void setFieldName(String fieldName) {
+
         this.fieldName = fieldName;
     }
 
@@ -28,6 +32,7 @@ public class FunctionResult {
     }
 
     public void setValue(double value) {
+
         this.value = value;
     }
 }
