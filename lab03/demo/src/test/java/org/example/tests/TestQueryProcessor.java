@@ -30,6 +30,7 @@ public class TestQueryProcessor {
         params.getFunctions().add(new FunctionsParameters("income", Funcs.AVARAGE));
 
         Results result = new QueryProcessor().GetResults(params);
+        result.getItems();
         assertThat(result.getItems(),hasSize(3));
         assertThat(result.getItems(),hasItems(
                 People.AnnaBuda,
