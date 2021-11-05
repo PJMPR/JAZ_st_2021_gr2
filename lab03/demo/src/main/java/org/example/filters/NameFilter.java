@@ -11,12 +11,12 @@ public class NameFilter implements FilterInterface {
     @Override
     public void meetCriteria(Results results, SearchParameters searchParameters) {
         if(searchParameters.getName() != null){
-            results.setItems(results.getItems().stream()
+            results.setItems(results
+                    .getItems()
+                    .stream()
                     .filter(person -> person.getName().toUpperCase(Locale.ROOT)
                     .equals(searchParameters.getName().toUpperCase(Locale.ROOT)))
                     .collect(Collectors.toList()));
         }
-
-
     }
 }

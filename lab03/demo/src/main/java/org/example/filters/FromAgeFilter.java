@@ -10,9 +10,11 @@ public class FromAgeFilter implements FilterInterface{
     @Override
     public void meetCriteria(Results results, SearchParameters searchParameters) {
         if (searchParameters.getAgeFrom() > 0) {
-            results.setItems(results.getItems().stream()
-            .filter(person -> person.getAge() >= searchParameters.getAgeFrom())
-            .collect(Collectors.toList()));
+            results.setItems(results
+                    .getItems()
+                    .stream()
+                    .filter(person -> person.getAge() >= searchParameters.getAgeFrom())
+                    .collect(Collectors.toList()));
         }
     }
 }

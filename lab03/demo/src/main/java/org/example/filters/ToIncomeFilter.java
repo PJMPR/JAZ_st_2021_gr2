@@ -9,9 +9,11 @@ public class ToIncomeFilter implements FilterInterface {
     @Override
     public void meetCriteria(Results results, SearchParameters searchParameters) {
         if (searchParameters.getIncomeTo() > 0) {
-            results.setItems(results.getItems().stream()
-            .filter(person -> person.getIncome() <= searchParameters.getIncomeTo())
-            .collect(Collectors.toList()));
+            results.setItems(results
+                    .getItems()
+                    .stream()
+                    .filter(person -> person.getIncome() <= searchParameters.getIncomeTo())
+                    .collect(Collectors.toList()));
         }
     }
 }

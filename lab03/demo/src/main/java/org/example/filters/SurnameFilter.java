@@ -10,7 +10,9 @@ public class SurnameFilter implements FilterInterface {
     @Override
     public void meetCriteria(Results results, SearchParameters searchParameters) {
         if(searchParameters.getSurname() != null){
-            results.setItems(results.getItems().stream()
+            results.setItems(results
+                    .getItems()
+                    .stream()
                     .filter(person -> person.getSurname().toUpperCase(Locale.ROOT)
                     .equals(searchParameters.getSurname().toUpperCase(Locale.ROOT)))
                     .collect(Collectors.toList()));

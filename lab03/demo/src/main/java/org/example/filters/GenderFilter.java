@@ -9,11 +9,12 @@ public class GenderFilter implements FilterInterface {
     @Override
     public void meetCriteria(Results results, SearchParameters searchParameters) {
         if(searchParameters.getSelectedGenders().size() > 0){
-            results.setItems(results.getItems().stream()
+            results.setItems(results
+                    .getItems()
+                    .stream()
                     .filter(person -> searchParameters.getSelectedGenders()
                     .contains(person.getGender()))
                     .collect(Collectors.toList()));
         }
-
     }
 }
