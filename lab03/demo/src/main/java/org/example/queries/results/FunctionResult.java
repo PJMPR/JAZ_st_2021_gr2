@@ -6,6 +6,11 @@ public class FunctionResult {
     private Funcs function;
     private String fieldName;
     private double value;
+    public FunctionResult(Funcs function, String fieldName, double value){
+        this.function = function;
+        this.fieldName = fieldName;
+        this.value = value;
+    }
 
     public Funcs getFunction() {
         return function;
