@@ -1,16 +1,35 @@
 package org.example.queries;
 
 import org.example.model.People;
+import org.example.queries.criteria.*;
+import org.example.queries.functions.Function;
 import org.example.queries.results.Results;
 import org.example.queries.search.SearchParameters;
 
+import java.util.List;
+
 public class QueryProcessor {
 
+
+        List<Criteria> criteriaList = List.of(
+                new AgeCriteria(),
+                new GenderCriteria(),
+                new IncomeCriteria(),
+                new NameCriteria(),
+                new SurnameCriteria(),
+                new PageCriteria()
+
+        );
     public Results GetResults(SearchParameters parameters){
-        Results result = new Results();
+        Results results = new Results();
 
-        result.setItems(People.Data);
+        results.setItems(People.Data);
 
-        return result;
+        criteriaList.forEach(criteria -> criteria.meetCriteria(results,parameters));
+        Function functions = new Function();
+        functions.implementFunction(results,parameters);
+
+
+        return results;
     }
 }
