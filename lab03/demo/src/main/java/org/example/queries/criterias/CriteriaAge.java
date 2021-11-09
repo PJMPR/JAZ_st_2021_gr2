@@ -28,7 +28,7 @@ public class SimpleCriteria extends CriteriaBase{
     Predicate<SearchParameters> checkParams;
     Predicate<Person> checkPerson;
     
-    public SimpleCriteria(Predicate<SearchParameters> checkParams, Predicate<Person> checkPerson){
+    public SimpleCriteria(Predicate<SearchParameters> checkParams, Function<boolean, Person, Params> checkPerson){
         this.checkPerson=checkPerson;
         this.checkParams = checkParams;
     }
@@ -39,7 +39,7 @@ public class SimpleCriteria extends CriteriaBase{
 
     
     protected boolean checkCriteria(Person p){
-        return this.checkPerson.check(p);
+        return this.checkPerson.invoke(p, parameters);
     }
     
 }
