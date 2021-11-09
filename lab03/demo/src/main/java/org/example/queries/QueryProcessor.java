@@ -12,6 +12,8 @@ import java.util.List;
 public class QueryProcessor {
 
     public List<Criteria> criteriaList = List.of (
+            new SimpleCriteria(params->params.getAgeFrom()>0,
+                              (person,params)->person.getAge()>person.getAgeFrom())
             new CriteriaAge(),
             new CriteriaGender(),
             new CriteriaIncome(),
