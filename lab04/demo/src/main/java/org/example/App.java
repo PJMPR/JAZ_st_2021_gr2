@@ -14,24 +14,4 @@ public class App {
         System.out.println(s);
 
     }
-
-
-
-}
-class SafeCaster{
-
-    public <T,E> T cast(E obj, Class<T> clazz){
-
-        T result = null;
-        try{
-            if(obj != null) result = clazz.cast(obj);
-        return result;
-        }
-
-            catch (ClassCastException ex){
-                //ex.printStackTrace();
-            }
-        return null;
-    }
-
 }
