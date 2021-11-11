@@ -1,7 +1,7 @@
 package org.example.tests;
 
 import org.example.caching.Cache;
-import org.example.caching.loaders.DictionaryCacheLoader;
+import org.example.caching.loaders.DictCacheLoader;
 import org.example.model.Dictionary;
 import org.junit.jupiter.api.Test;
 
