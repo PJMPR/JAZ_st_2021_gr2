@@ -1,0 +1,5 @@
+2021-11-17 16:31:18 ERROR - Unknown error.
+2021-11-17 16:31:29 ERROR - NO CONNECTION
+2021-11-17 16:31:29 ERROR - NOT FOUND
+2021-11-17 16:31:29 ERROR - Unknown error.
+2021-11-17 16:31:41 ERROR - Connection timed out, check internet connection

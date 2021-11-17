@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="reflectionsdemo" />
+        <module name="safeinvoker" />
+        <module name="annotationsdemo" />
+        <module name="cachedemo" />
+        <module name="annotationsdemo (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="annotationsdemo" target="17" />
+      <module name="annotationsdemo (1)" target="17" />
+      <module name="cachedemo" target="17" />
+      <module name="reflectionsdemo" target="16" />
+      <module name="safeinvoker" target="16" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
