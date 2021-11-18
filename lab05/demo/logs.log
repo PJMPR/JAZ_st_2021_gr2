@@ -1,0 +1,4 @@
+   [main] INFO  InternetConnectionLost  2021-11-18 20:25:56 - Internet connection lost!
+   [main] INFO  FileNotFound  2021-11-18 20:25:56 - File not found!
+   [main] INFO  DivByZero  2021-11-18 20:25:56 - Divide by zero!
+   
