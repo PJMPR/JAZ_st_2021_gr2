@@ -1,0 +1,27 @@
+2021-11-18 22:52:49 ERROR - Class was not found
+2021-11-18 22:54:30 ERROR - Class was not found
+2021-11-18 22:54:33 ERROR - Class was not found
+2021-11-18 22:54:35 ERROR - Class was not found
+2021-11-18 22:54:38 ERROR - Class was not found
+2021-11-18 22:54:41 ERROR - Class was not found
+2021-11-18 22:54:44 ERROR - Class was not found
+2021-11-18 22:54:47 ERROR - Class was not found
+2021-11-18 22:54:50 ERROR - Class was not found
+2021-11-18 22:55:13 ERROR - Class was not found
+2021-11-18 22:55:16 ERROR - Class was not found
+2021-11-18 22:55:19 ERROR - Class was not found
+2021-11-18 22:59:00 ERROR - Connection attempt failed
+2021-11-18 23:03:36 ERROR - Class was not found
+2021-11-18 23:03:36 ERROR - File not found
+2021-11-18 23:03:40 ERROR - Connection attempt failed
+2021-11-18 23:03:44 ERROR - Connection timed out
+2021-11-18 23:03:48 ERROR - Connection timed out
+2021-11-18 23:03:58 ERROR - Class was not found
+2021-11-18 23:03:58 ERROR - File not found
+2021-11-18 23:04:02 ERROR - Connection attempt failed
+2021-11-18 23:04:07 ERROR - Connection timed out
+2021-11-18 23:04:11 ERROR - Connection timed out
+2021-11-18 23:06:13 ERROR - Class was not found
+2021-11-18 23:06:39 ERROR - Class was not found
+2021-11-18 23:09:08 ERROR - Class was not found
+2021-11-18 23:09:18 ERROR - Class was not found
