@@ -1,0 +1,12 @@
+2021-11-18 19:16:34 ERROR - Connection timed out. Check your internet connection.
+2021-11-18 19:16:34 ERROR - File not found. Maybe the file path is wrong?
+2021-11-18 19:16:34 ERROR - Class not found.
+2021-11-18 19:16:45 ERROR - Could not connect to database. Check your internet connection
+2021-11-18 19:16:45 ERROR - Unknown error occured.
+2021-11-18 19:16:45 ERROR - Unknown error occured.
+2021-11-18 19:18:10 ERROR - Connection timed out. Check your internet connection.
+2021-11-18 19:18:10 ERROR - File not found. Maybe the file path is wrong?
+2021-11-18 19:18:10 ERROR - Class not found.
+2021-11-18 19:18:21 ERROR - Could not connect to database. Check your internet connection
+2021-11-18 19:18:21 ERROR - Unknown error occured.
+2021-11-18 19:18:21 ERROR - Unknown error occured.
