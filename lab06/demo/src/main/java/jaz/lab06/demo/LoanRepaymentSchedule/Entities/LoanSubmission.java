@@ -8,7 +8,6 @@ import java.util.Collection;
 public class LoanSubmission extends MappedModel{
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-
     private long id;
     private int amount;
     private int installmentCount;

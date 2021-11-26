@@ -23,7 +23,7 @@ public class Schedule extends MappedModel{
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id", referencedColumnName = "id", nullable = false, unique = true, insertable = false, updatable = false)
+    @JoinColumn(name = "id", referencedColumnName = "id", nullable = false, unique = true)
     private LoanSubmission loanSubmission;
 
     public long getId() {
