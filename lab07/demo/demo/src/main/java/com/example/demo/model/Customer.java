@@ -1,8 +1,7 @@
 package com.example.demo.model;
-
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.Collection;
+import java.util.List;
 
 @Entity
 public class Customer {
@@ -13,8 +12,8 @@ public class Customer {
     private byte active;
     private Timestamp createDate;
     private Timestamp lastUpdate;
-    private Collection<Payment> paymentsByCustomerId;
-    private Collection<Rental> rentalsByCustomerId;
+    private List<Payment> paymentsByCustomerId;
+    private List<Rental> rentalsByCustomerId;
 
     @Id
     @Column(name = "customer_id")
@@ -116,21 +115,29 @@ public class Customer {
         return result;
     }
 
+    public double amountSpent(){
+        return paymentsByCustomerId.stream().mapToDouble(payment -> payment.getAmount().doubleValue()).sum();
+    }
+
+    public int moviesWatched(){
+        return paymentsByCustomerId.size();
+    }
+
     @OneToMany(mappedBy = "customerByCustomerId")
-    public Collection<Payment> getPaymentsByCustomerId() {
+    public List<Payment> getPayments() {
         return paymentsByCustomerId;
     }
 
-    public void setPaymentsByCustomerId(Collection<Payment> paymentsByCustomerId) {
+    public void setPayments(List<Payment> payments) {
         this.paymentsByCustomerId = paymentsByCustomerId;
     }
 
     @OneToMany(mappedBy = "customerByCustomerId")
-    public Collection<Rental> getRentalsByCustomerId() {
+    public List<Rental> getRentalsByCustomer() {
         return rentalsByCustomerId;
     }
 
-    public void setRentalsByCustomerId(Collection<Rental> rentalsByCustomerId) {
+    public void setRentalsByCustomer(List<Rental> rentalsByCustomer) {
         this.rentalsByCustomerId = rentalsByCustomerId;
     }
 }
