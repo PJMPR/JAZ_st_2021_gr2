@@ -13,8 +13,8 @@ public class Customer {
     private byte active;
     private Timestamp createDate;
     private Timestamp lastUpdate;
-    private Collection<Payment> paymentsByCustomerId;
-    private Collection<Rental> rentalsByCustomerId;
+    private Collection<Payment> payments;
+    private Collection<Rental> rentals;
 
     @Id
     @Column(name = "customer_id")
@@ -116,21 +116,21 @@ public class Customer {
         return result;
     }
 
-    @OneToMany(mappedBy = "customerByCustomerId")
-    public Collection<Payment> getPaymentsByCustomerId() {
-        return paymentsByCustomerId;
+    @OneToMany(mappedBy = "customer")
+    public Collection<Payment> getPayments() {
+        return payments;
     }
 
-    public void setPaymentsByCustomerId(Collection<Payment> paymentsByCustomerId) {
-        this.paymentsByCustomerId = paymentsByCustomerId;
+    public void setPayments(Collection<Payment> payments) {
+        this.payments = payments;
     }
 
-    @OneToMany(mappedBy = "customerByCustomerId")
-    public Collection<Rental> getRentalsByCustomerId() {
-        return rentalsByCustomerId;
+    @OneToMany(mappedBy = "customer")
+    public Collection<Rental> getRentals() {
+        return rentals;
     }
 
-    public void setRentalsByCustomerId(Collection<Rental> rentalsByCustomerId) {
-        this.rentalsByCustomerId = rentalsByCustomerId;
+    public void setRentals(Collection<Rental> rentals) {
+        this.rentals = rentals;
     }
 }
