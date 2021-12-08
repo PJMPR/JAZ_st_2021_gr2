@@ -1,7 +1,6 @@
 package com.example.demo.model;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.Collection;
 import java.util.Objects;
@@ -15,8 +14,8 @@ public class Customer {
     private byte active;
     private Timestamp createDate;
     private Timestamp lastUpdate;
-    private Collection<Payment> paymentsByCustomerId;
-    private Collection<Rental> rentalsByCustomerId;
+    private Collection<Payment> payments;
+    private Collection<Rental> rentals;
 
     @Id
     @Column(name = "customer_id")
@@ -119,34 +118,27 @@ public class Customer {
     }
 
     @OneToMany(mappedBy = "customerByCustomerId")
-    public Collection<Payment> getPaymentsByCustomerId() {
-        return paymentsByCustomerId;
+    public Collection<Payment> getPayments() {
+        return payments;
     }
 
-    public void setPaymentsByCustomerId(Collection<Payment> paymentsByCustomerId) {
-        this.paymentsByCustomerId = paymentsByCustomerId;
+    public void setPayments(Collection<Payment> paymentsByCustomerId) {
+        this.payments = paymentsByCustomerId;
     }
 
     @OneToMany(mappedBy = "customerByCustomerId")
-    public Collection<Rental> getRentalsByCustomerId() {
-        return rentalsByCustomerId;
+    public Collection<Rental> getRentals() {
+        return rentals;
     }
 
-    public void setRentalsByCustomerId(Collection<Rental> rentalsByCustomerId) {
-        this.rentalsByCustomerId = rentalsByCustomerId;
+    public void setRentals(Collection<Rental> rentalsByCustomerId) {
+        this.rentals = rentalsByCustomerId;
     }
 
-
-    public BigDecimal amountSpent(){
-        BigDecimal sum = BigDecimal.ZERO;
-        sum = paymentsByCustomerId
-                .stream()
-                .map(Payment::getAmount)
-                .reduce(BigDecimal.valueOf(0),BigDecimal::add);
-        return sum;
+    public int getRentalsByMonth(int year, int month){
+        Timestamp timeFrom = Timestamp.valueOf(year+"-"+month+"-01 00:00:01");
+        Timestamp timeTo = Timestamp.valueOf(year+"-"+month+"-31 23:59:59");
+        return (int)getRentals().stream().map(Rental::getRentalDate).filter(x -> x.after(timeFrom) && x.before(timeTo)).count();
     }
 
-    public int moviesWatched(){
-        return paymentsByCustomerId.size();
-    }
 }
