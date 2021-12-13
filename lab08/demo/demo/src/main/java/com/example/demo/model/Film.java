@@ -13,7 +13,7 @@ public class Film {
     private int length;
     private String rating;
     private Timestamp lastUpdate;
-    private Language languageBy;
+    private Language language;
     private Collection<FilmActor> filmActors;
     private Collection<FilmCategory> filmCategories;
 
@@ -118,13 +118,13 @@ public class Film {
     }
 
     @ManyToOne
-    @JoinColumn(name = "language_id", referencedColumnName = "language_id", nullable = false)
-    public Language getLanguageBy() {
-        return languageBy;
+    @JoinColumn(name = "language_id", referencedColumnName = "language_id")
+    public Language getLanguage() {
+        return language;
     }
 
-    public void setLanguageBy(Language languageBy) {
-        this.languageBy = languageBy;
+    public void setLanguage(Language language) {
+        this.language = language;
     }
 
     @OneToMany(mappedBy = "film")
