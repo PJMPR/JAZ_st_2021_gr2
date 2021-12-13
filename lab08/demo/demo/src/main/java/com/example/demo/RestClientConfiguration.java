@@ -9,8 +9,7 @@ import org.springframework.web.client.RestTemplate;
 public class RestClientConfiguration {
 
     @Bean
-    public RestTemplate theMoviesService(){
-        var builder = new RestTemplateBuilder();
+    public RestTemplate restTemplate(RestTemplateBuilder builder){
         return builder.build();
     }
 

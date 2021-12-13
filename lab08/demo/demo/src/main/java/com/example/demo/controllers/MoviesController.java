@@ -13,21 +13,35 @@ import org.springframework.web.client.RestTemplate;
 @Controller
 @RequestMapping("movies-client")
 public class MoviesController {
-
-    @Value("${themovies.api.key}")
-    String apiKey;
-    RestTemplate rest;
-
-    public MoviesController(RestTemplate rest) {
-        this.rest = rest;
+    FilmService filmService;
+    
+    @GetMapping
+    @RequestMapping("{id}")
+    public ResponseEntity<MovieDto> getDataOfMovie(@PathVariable("id") int id){
+        return ResponseEntity.ok(filmService.getMovieInfo(id));
     }
 
-    @GetMapping("{id}")
-    public ResponseEntity getMovie(@PathVariable int id){
-        var movie = rest.getForEntity("https://api.themoviedb.org/3/movie/"+id+"?api_key="+apiKey, MovieDto.class).getBody();
-        return ResponseEntity.ok(movie);
-
+    @GetMapping
+    @RequestMapping("/imdb/{id}")
+    public ResponseEntity<IMDBMovieDto> getDataIMDB(@PathVariable("id") String id){
+        return ResponseEntity.ok(filmService.getMovieInfoFromIMDB(id));
     }
 
+    @GetMapping
+    @RequestMapping("/updater/reload")
+    public ResponseEntity reloadData() {
+        int year = Calendar.getInstance().get(Calendar.YEAR);
+        return ResponseEntity.ok(filmService.reloadData());
+    }
 
+    @GetMapping
+    @RequestMapping("/updater/reload/{year}")
+    public ResponseEntity reloadDataByYear(@PathVariable int year) {
+        return ResponseEntity.ok(filmService.reloadDataByYear(year));
+    }
+
+    @PostMapping("/updater/status")
+    public ResponseEntity getSystemStatus(){
+        return ResponseEntity.ok(filmService.getSystemStatusInfo());
+    }
 }
