@@ -1,0 +1,35 @@
+2021-12-12 13:21:51 INFO  - Updating database has begun
+2021-12-12 13:21:51 WARN  - Skipped deleted movie from Moviedb
+2021-12-12 13:21:51 INFO  - Found and added new film: Four Rooms
+2021-12-12 13:21:51 INFO  - Found and added new category: Crime
+2021-12-12 13:21:51 INFO  - Found and added new actor: Tim Roth
+2021-12-12 13:21:51 INFO  - Found and added new actor: Antonio Banderas
+2021-12-12 13:21:51 INFO  - Found and added new actor: Sammi Davis
+2021-12-12 13:21:51 INFO  - Found and added new film: Judgment Night
+2021-12-12 13:21:51 INFO  - Found and added new category: Thriller
+2021-12-12 13:21:51 INFO  - Found and added new actor: Emilio Estevez
+2021-12-12 13:21:51 INFO  - Found and added new actor: Cuba Gooding Jr.
+2021-12-12 13:21:51 INFO  - Found and added new actor: Denis Leary
+2021-12-12 13:21:51 WARN  - Skipped deleted movie from Moviedb
+2021-12-12 13:21:51 INFO  - Found and added new language: Hindi
+2021-12-12 13:21:51 INFO  - Found and added new language: Russian
+2021-12-12 13:21:51 INFO  - Found and added new language: Spanish
+2021-12-12 13:21:51 INFO  - Found and added new film: Life in Loops (A Megacities RMX)
+2021-12-12 13:21:52 INFO  - Found and added new film: Sunday in August
+2021-12-12 13:21:52 INFO  - Found and added new actor: Rita Lengyel
+2021-12-12 13:21:52 INFO  - Found and added new actor: Milton Welsh
+2021-12-12 13:21:52 WARN  - Skipped deleted movie from Moviedb
+2021-12-12 13:21:52 INFO  - Found and added new film: Finding Nemo
+2021-12-12 13:21:52 INFO  - Found and added new actor: Albert Brooks
+2021-12-12 13:21:52 INFO  - Found and added new actor: Ellen DeGeneres
+2021-12-12 13:21:52 INFO  - Found and added new actor: Alexander Gould
+2021-12-12 13:21:52 INFO  - Found and added new film: Forrest Gump
+2021-12-12 13:21:52 INFO  - Found and added new category: Romance
+2021-12-12 13:21:52 INFO  - Found and added new actor: Tom Hanks
+2021-12-12 13:21:52 INFO  - Found and added new actor: Robin Wright
+2021-12-12 13:21:52 INFO  - Found and added new actor: Gary Sinise
+2021-12-12 13:21:52 INFO  - Found and added new film: American Beauty
+2021-12-12 13:21:52 INFO  - Found and added new actor: Kevin Spacey
+2021-12-12 13:21:52 INFO  - Found and added new actor: Annette Bening
+2021-12-12 13:21:52 INFO  - Found and added new actor: Thora Birch
+2021-12-12 13:21:52 INFO  - Found and added new film: Dancer in the Dark

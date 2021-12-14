@@ -117,22 +117,39 @@ public class Customer {
         return result;
     }
 
+<<<<<<< HEAD
     @OneToMany(mappedBy = "customerByCustomerId")
+=======
+    @OneToMany(mappedBy = "customer")
+>>>>>>> e1f1e6373e1d9e43263b72541030bb9e37d677da
     public Collection<Payment> getPayments() {
         return payments;
     }
 
+<<<<<<< HEAD
     public void setPayments(Collection<Payment> paymentsByCustomerId) {
         this.payments = paymentsByCustomerId;
     }
 
     @OneToMany(mappedBy = "customerByCustomerId")
+=======
+    public void setPayments(Collection<Payment> payments) {
+        this.payments = payments;
+    }
+
+    @OneToMany(mappedBy = "customer")
+>>>>>>> e1f1e6373e1d9e43263b72541030bb9e37d677da
     public Collection<Rental> getRentals() {
         return rentals;
     }
 
+<<<<<<< HEAD
     public void setRentals(Collection<Rental> rentalsByCustomerId) {
         this.rentals = rentalsByCustomerId;
+=======
+    public void setRentals(Collection<Rental> rentals) {
+        this.rentals = rentals;
+>>>>>>> e1f1e6373e1d9e43263b72541030bb9e37d677da
     }
 
     public int getRentalsByMonth(int year, int month){

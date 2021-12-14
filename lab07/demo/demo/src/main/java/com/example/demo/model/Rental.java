@@ -12,7 +12,7 @@ public class Rental {
     private Timestamp returnDate;
     private Timestamp lastUpdate;
     private Collection<Payment> paymentsByRentalId;
-    private Customer customerByCustomerId;
+    private Customer customer;
 
     @Id
     @Column(name = "rental_id")
@@ -78,7 +78,7 @@ public class Rental {
         return result;
     }
 
-    @OneToMany(mappedBy = "rentalByRentalId")
+    @OneToMany(mappedBy = "rental")
     public Collection<Payment> getPaymentsByRentalId() {
         return paymentsByRentalId;
     }
@@ -89,11 +89,11 @@ public class Rental {
 
     @ManyToOne
     @JoinColumn(name = "customer_id", referencedColumnName = "customer_id", nullable = false)
-    public Customer getCustomerByCustomerId() {
-        return customerByCustomerId;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setCustomerByCustomerId(Customer customerByCustomerId) {
-        this.customerByCustomerId = customerByCustomerId;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 }

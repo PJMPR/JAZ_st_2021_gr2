@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86be27ff-1997-4fca-a2c6-7a89e1411a99" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/demo/demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/RestClientConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/contract/MovieDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/controllers/MoviesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/model/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/model/Film.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/model/FilmActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/model/FilmActorPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/model/FilmCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/model/FilmCategoryPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/model/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/demo/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab07/demo/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab07/demo/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab07/demo/demo/src/main/java/com/example/demo/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab07/demo/demo/src/main/java/com/example/demo/controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab07/demo/demo/src/main/java/com/example/demo/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab07/demo/demo/src/main/java/com/example/demo/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab07/demo/demo/src/main/java/com/example/demo/model/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab07/demo/demo/src/main/java/com/example/demo/model/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab07/demo/demo/src/main/java/com/example/demo/model/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab07/demo/demo/src/main/java/com/example/demo/model/Rental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab07/demo/demo/src/main/java/com/example/demo/repositories/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab07/demo/demo/src/main/java/com/example/demo/repositories/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab07/demo/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../lab07/demo/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab07/demo/demo/src/main/resources/persitance.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab07/demo/demo/src/main/resources/persitance.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="22GnYNWkfzeQ59K2e0oWvMKuwab" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo/demo/pom.xml" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86be27ff-1997-4fca-a2c6-7a89e1411a99" name="Changes" comment="" />
+      <created>1639472837186</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639472837186</updated>
+      <workItem from="1639472838337" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

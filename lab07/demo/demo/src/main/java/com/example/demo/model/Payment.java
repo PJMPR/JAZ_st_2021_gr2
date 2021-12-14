@@ -10,8 +10,8 @@ public class Payment {
     private BigDecimal amount;
     private Timestamp paymentDate;
     private Timestamp lastUpdate;
-    private Customer customerByCustomerId;
-    private Rental rentalByRentalId;
+    private Customer customer;
+    private Rental rental;
 
     @Id
     @Column(name = "payment_id")
@@ -79,21 +79,21 @@ public class Payment {
 
     @ManyToOne
     @JoinColumn(name = "customer_id", referencedColumnName = "customer_id", nullable = false)
-    public Customer getCustomerByCustomerId() {
-        return customerByCustomerId;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setCustomerByCustomerId(Customer customerByCustomerId) {
-        this.customerByCustomerId = customerByCustomerId;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
     @ManyToOne
     @JoinColumn(name = "rental_id", referencedColumnName = "rental_id")
-    public Rental getRentalByRentalId() {
-        return rentalByRentalId;
+    public Rental getRental() {
+        return rental;
     }
 
-    public void setRentalByRentalId(Rental rentalByRentalId) {
-        this.rentalByRentalId = rentalByRentalId;
+    public void setRental(Rental rental) {
+        this.rental = rental;
     }
 }
