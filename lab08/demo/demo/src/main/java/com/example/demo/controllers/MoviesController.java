@@ -1,7 +1,6 @@
 package com.example.demo.controllers;
 
 import com.example.demo.contract.MovieDto;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -26,8 +25,5 @@ public class MoviesController {
     public ResponseEntity getMovie(@PathVariable int id){
         var movie = rest.getForEntity("https://api.themoviedb.org/3/movie/"+id+"?api_key="+apiKey, MovieDto.class).getBody();
         return ResponseEntity.ok(movie);
-
     }
-
-
 }
