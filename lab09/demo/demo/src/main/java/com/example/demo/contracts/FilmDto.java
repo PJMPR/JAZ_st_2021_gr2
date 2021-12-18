@@ -1,9 +1,6 @@
 package com.example.demo.contracts;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 
@@ -11,21 +8,14 @@ import java.math.BigDecimal;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class FilmDto {
-
-    private Long id;
-    private String Title;
+    private Integer id;
+    private String title;
     private Integer releaseYear;
     private LanguageDto language;
+    private BigDecimal rentalDuration;
     private BigDecimal rentalRate;
-    private Integer rentalDuration;
+    private BigDecimal replacementCosts;
 
 }
-
-/*
-*     releaseYear?:number,
-    language?:Language,
-    rentalDuration?:number,
-    rentalRate?:number,
-    replacementCosts?:number
-* */
