@@ -1,33 +1,54 @@
 package com.example.demo.services;
 
 import com.example.demo.contracts.FilmDto;
-import com.example.demo.contracts.LanguageDto;
+import com.example.demo.model.Film;
+import com.example.demo.model.Language;
 import com.example.demo.repositories.FilmsRepository;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.util.List;
-import java.util.stream.Collectors;
 
-
-@RequiredArgsConstructor
-@Transactional
 @Service
 public class FilmsService {
+    private FilmsRepository repo;
 
-    private final FilmsRepository filmsRepository;
+    @Autowired
+    public FilmsService(FilmsRepository repo)
+    {
+        this.repo = repo;
+    }
 
-    public List<FilmDto> getFilms(){
+    public List<FilmDto> getAllFilms(int page, Language language, Integer release_year, Integer id, String title, Integer rental_duration, BigDecimal rental_rate, BigDecimal replacement_costs) {
+        Pageable pageable = PageRequest.of(page, 15);
 
-        return filmsRepository.getFilms().stream().limit(20)
-                .map(film->new FilmDto(film.getFilmId(),
-                        film.getTitle(),
-                        (int)film.getReleaseYear(),
-                        new LanguageDto(film.getLanguageByLanguageId().getLanguageId(), film.getLanguageByLanguageId().getName()),
-                        film.getRentalRate(),
-                        (int)film.getRentalDuration()
-                        ))
-                .collect(Collectors.toList());
+        return repo.findAllFilms(pageable, id, release_year, title, rental_duration, rental_rate, replacement_costs, language).getContent();
+    }
+
+    public int putFilm(int id, Film film) {
+        Film repoFilm = repo.findById(id);
+
+        repoFilm.setTitle(film.getTitle());
+        repoFilm.setLanguage(film.getLanguage());
+        repoFilm.setReleaseYear(film.getReleaseYear());
+        repoFilm.setRentalDuration(film.getRentalDuration());
+        repoFilm.setRentalRate(film.getRentalRate());
+        repoFilm.setReplacementCosts(film.getReplacementCosts());
+
+        return repo.save(repoFilm).getId();
+    }
+
+    public int deleteFilm(int id)
+    {
+        repo.deleteById(id);
+        return id;
+    }
+
+    public long addFilm(Film film)
+    {
+        return repo.save(film).getId();
     }
 }

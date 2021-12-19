@@ -3,109 +3,145 @@ package com.example.demo.model;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.util.Objects;
 
 @Entity
 public class Film {
-    private Long filmId;
+    private int id;
     private String title;
-    private Short releaseYear;
-    private Short rentalDuration;
+    private int releaseYear;
+    private int rentalDuration;
     private BigDecimal rentalRate;
-    private BigDecimal replacementCost;
+    private BigDecimal replacementCosts;
     private Timestamp lastUpdate;
-    private Language languageByLanguageId;
+    private Language language;
 
     @Id
     @Column(name = "film_id")
-    public Long getFilmId() {
-        return filmId;
+    public int getId()
+    {
+        return id;
     }
 
-    public void setFilmId(Long filmId) {
-        this.filmId = filmId;
+    public void setId(int filmId)
+    {
+        this.id = filmId;
     }
 
     @Basic
     @Column(name = "title")
-    public String getTitle() {
+    public String getTitle()
+    {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(String title)
+    {
         this.title = title;
     }
 
     @Basic
     @Column(name = "release_year")
-    public Short getReleaseYear() {
+    public int getReleaseYear()
+    {
         return releaseYear;
     }
 
-    public void setReleaseYear(Short releaseYear) {
+    public void setReleaseYear(int releaseYear)
+    {
         this.releaseYear = releaseYear;
     }
 
     @Basic
     @Column(name = "rental_duration")
-    public Short getRentalDuration() {
+    public int getRentalDuration()
+    {
         return rentalDuration;
     }
 
-    public void setRentalDuration(Short rentalDuration) {
+    public void setRentalDuration(int rentalDuration)
+    {
         this.rentalDuration = rentalDuration;
     }
 
     @Basic
     @Column(name = "rental_rate")
-    public BigDecimal getRentalRate() {
+    public BigDecimal getRentalRate()
+    {
         return rentalRate;
     }
 
-    public void setRentalRate(BigDecimal rentalRate) {
+    public void setRentalRate(BigDecimal rentalRate)
+    {
         this.rentalRate = rentalRate;
     }
 
     @Basic
     @Column(name = "replacement_cost")
-    public BigDecimal getReplacementCost() {
-        return replacementCost;
+    public BigDecimal getReplacementCosts()
+    {
+        return replacementCosts;
     }
 
-    public void setReplacementCost(BigDecimal replacementCost) {
-        this.replacementCost = replacementCost;
+    public void setReplacementCosts(BigDecimal replacementCost)
+    {
+        this.replacementCosts = replacementCost;
     }
 
     @Basic
     @Column(name = "last_update")
-    public Timestamp getLastUpdate() {
+    public Timestamp getLastUpdate()
+    {
         return lastUpdate;
     }
 
-    public void setLastUpdate(Timestamp lastUpdate) {
+    public void setLastUpdate(Timestamp lastUpdate)
+    {
         this.lastUpdate = lastUpdate;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Film film = (Film) o;
-        return Objects.equals(filmId, film.filmId) && Objects.equals(title, film.title) && Objects.equals(releaseYear, film.releaseYear) && Objects.equals(rentalDuration, film.rentalDuration) && Objects.equals(rentalRate, film.rentalRate) && Objects.equals(replacementCost, film.replacementCost) && Objects.equals(lastUpdate, film.lastUpdate);
+    public void setLanguage(Language language)
+    {
+        this.language = language;
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(filmId, title, releaseYear, rentalDuration, rentalRate, replacementCost, lastUpdate);
+    public boolean equals(Object o)
+    {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Film film = (Film) o;
+
+        if (id != film.id) return false;
+        if (releaseYear != film.releaseYear) return false;
+        if (rentalDuration != film.rentalDuration) return false;
+        if (title != null ? !title.equals(film.title) : film.title != null) return false;
+        if (rentalRate != null ? !rentalRate.equals(film.rentalRate) : film.rentalRate != null) return false;
+        if (replacementCosts != null ? !replacementCosts.equals(film.replacementCosts) : film.replacementCosts != null)
+            return false;
+        if (lastUpdate != null ? !lastUpdate.equals(film.lastUpdate) : film.lastUpdate != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode()
+    {
+        int result = id;
+        result = 31 * result + (title != null ? title.hashCode() : 0);
+        result = 31 * result + releaseYear;
+        result = 31 * result + rentalDuration;
+        result = 31 * result + (rentalRate != null ? rentalRate.hashCode() : 0);
+        result = 31 * result + (replacementCosts != null ? replacementCosts.hashCode() : 0);
+        result = 31 * result + (lastUpdate != null ? lastUpdate.hashCode() : 0);
+        return result;
     }
 
     @ManyToOne
     @JoinColumn(name = "language_id", referencedColumnName = "language_id", nullable = false)
-    public Language getLanguageByLanguageId() {
-        return languageByLanguageId;
+    public Language getLanguage()
+    {
+        return language;
     }
 
-    public void setLanguageByLanguageId(Language languageByLanguageId) {
-        this.languageByLanguageId = languageByLanguageId;
-    }
 }
