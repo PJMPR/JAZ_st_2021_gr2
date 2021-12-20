@@ -13,12 +13,10 @@ public class FilmsRepository {
 
     private final EntityManager entityManager;
 
-    public List<Film> getFilms(){
+    public List<Film> getFilmsByPage(int page, int size){
 
-        return entityManager.createQuery("" +
-                "SELECT  f FROM Film f WHERE f.releaseYear = 2006",
-                        Film.class)
-                .getResultList();
+        return entityManager.createQuery("" + "SELECT film FROM FILM film", Film.class)
+                .setFirstResult((page-1)*size).setMaxResults(size).getResultList();
     }
 
 }

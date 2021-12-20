@@ -15,19 +15,5 @@ import java.util.stream.Collectors;
 @Transactional
 @Service
 public class FilmsService {
-
     private final FilmsRepository filmsRepository;
-
-    public List<FilmDto> getFilms(){
-
-        return filmsRepository.getFilms().stream().limit(20)
-                .map(film->new FilmDto(film.getFilmId(),
-                        film.getTitle(),
-                        (int)film.getReleaseYear(),
-                        new LanguageDto(film.getLanguageByLanguageId().getLanguageId(), film.getLanguageByLanguageId().getName()),
-                        film.getRentalRate(),
-                        (int)film.getRentalDuration()
-                        ))
-                .collect(Collectors.toList());
-    }
 }

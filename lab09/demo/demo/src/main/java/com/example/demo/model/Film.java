@@ -7,7 +7,7 @@ import java.util.Objects;
 
 @Entity
 public class Film {
-    private Long filmId;
+    private int filmId;
     private String title;
     private Short releaseYear;
     private Short rentalDuration;
@@ -18,11 +18,11 @@ public class Film {
 
     @Id
     @Column(name = "film_id")
-    public Long getFilmId() {
+    public int getFilmId() {
         return filmId;
     }
 
-    public void setFilmId(Long filmId) {
+    public void setFilmId(int filmId) {
         this.filmId = filmId;
     }
 
@@ -91,12 +91,27 @@ public class Film {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Film film = (Film) o;
-        return Objects.equals(filmId, film.filmId) && Objects.equals(title, film.title) && Objects.equals(releaseYear, film.releaseYear) && Objects.equals(rentalDuration, film.rentalDuration) && Objects.equals(rentalRate, film.rentalRate) && Objects.equals(replacementCost, film.replacementCost) && Objects.equals(lastUpdate, film.lastUpdate);
+        if(filmId != film.filmId) return false;
+        if (releaseYear != film.releaseYear) return false;
+        if (rentalDuration != film.rentalDuration) return false;
+        if (title != null ? !title.equals(film.title) : film.title != null) return false;
+        if (rentalRate != null ? !rentalRate.equals(film.rentalRate) : film.rentalRate != null) return false;
+        if (replacementCost != null ? !replacementCost.equals(film.replacementCost) : film.replacementCost != null) return false;
+        if (lastUpdate != null ? !lastUpdate.equals(film.lastUpdate) : film.lastUpdate != null) return false;
+
+        return true;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(filmId, title, releaseYear, rentalDuration, rentalRate, replacementCost, lastUpdate);
+        int result = filmId;
+        result = 31 * result + (title != null ? title.hashCode() : 0);
+        result = 31 * result + releaseYear;
+        result = 31 * result + rentalDuration;
+        result = 31 * result + (rentalRate != null ? rentalRate.hashCode() : 0);
+        result = 31 * result + (replacementCost != null ? replacementCost.hashCode() : 0);
+        result = 31 * result + (lastUpdate != null ? lastUpdate.hashCode() : 0);
+        return result;
     }
 
     @ManyToOne
@@ -105,7 +120,7 @@ public class Film {
         return languageByLanguageId;
     }
 
-    public void setLanguageByLanguageId(Language languageByLanguageId) {
+    public void setLanguage(Language languageByLanguageId) {
         this.languageByLanguageId = languageByLanguageId;
     }
 }
