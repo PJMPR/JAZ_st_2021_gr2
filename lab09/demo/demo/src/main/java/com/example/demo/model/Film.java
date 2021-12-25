@@ -9,12 +9,26 @@ import java.util.Objects;
 public class Film {
     private Long filmId;
     private String title;
-    private Short releaseYear;
-    private Short rentalDuration;
+    private Integer releaseYear;
+    private Integer rentalDuration;
     private BigDecimal rentalRate;
     private BigDecimal replacementCost;
     private Timestamp lastUpdate;
     private Language languageByLanguageId;
+
+    public Film() {
+    }
+
+    public Film(Long filmId, String title, Integer releaseYear, Integer rentalDuration, BigDecimal rentalRate, BigDecimal replacementCost, Timestamp lastUpdate, Language languageByLanguageId) {
+        this.filmId = filmId;
+        this.title = title;
+        this.releaseYear = releaseYear;
+        this.rentalDuration = rentalDuration;
+        this.rentalRate = rentalRate;
+        this.replacementCost = replacementCost;
+        this.lastUpdate = lastUpdate;
+        this.languageByLanguageId = languageByLanguageId;
+    }
 
     @Id
     @Column(name = "film_id")
@@ -38,21 +52,21 @@ public class Film {
 
     @Basic
     @Column(name = "release_year")
-    public Short getReleaseYear() {
+    public Integer getReleaseYear() {
         return releaseYear;
     }
 
-    public void setReleaseYear(Short releaseYear) {
+    public void setReleaseYear(Integer releaseYear) {
         this.releaseYear = releaseYear;
     }
 
     @Basic
     @Column(name = "rental_duration")
-    public Short getRentalDuration() {
+    public Integer getRentalDuration() {
         return rentalDuration;
     }
 
-    public void setRentalDuration(Short rentalDuration) {
+    public void setRentalDuration(Integer rentalDuration) {
         this.rentalDuration = rentalDuration;
     }
 
