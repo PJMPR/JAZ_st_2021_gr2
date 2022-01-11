@@ -15,7 +15,7 @@ public class FilmsRepository {
 
     public List<Film> getFilms(){
 
-        return entityManager.createQuery("" +
+        return entityManager.createQuery(
                 "SELECT  f FROM Film f WHERE f.releaseYear = 2006",
                         Film.class)
                 .getResultList();
