@@ -486,3 +486,9 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'tm
 2022-01-11 15:52:21,290 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-01-11 15:52:21,291 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
 2022-01-11 15:52:21,292 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-01-11 17:17:16,936 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-11 17:17:16,967 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-01-11 17:17:16,982 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-01-11 17:17:20,422 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-11 17:17:20,437 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-01-11 17:17:20,453 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
