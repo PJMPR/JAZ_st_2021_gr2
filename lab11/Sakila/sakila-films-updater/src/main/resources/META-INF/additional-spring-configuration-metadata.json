@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "tmdb.api.key",
+      "type": "java.lang.String",
+      "description": "Description for tmdb.api.key."
+  }
+] }
