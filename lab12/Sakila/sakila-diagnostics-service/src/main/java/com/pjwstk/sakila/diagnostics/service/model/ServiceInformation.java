@@ -15,6 +15,13 @@ public class ServiceInformation {
     private String host;
     private boolean isWorking;
 
+    public ServiceInformation(long l, String serviceName, String serviceHost, boolean b) {
+    }
+
+    public ServiceInformation() {
+
+    }
+
     public void setId(Long id) {
         this.id = id;
     }

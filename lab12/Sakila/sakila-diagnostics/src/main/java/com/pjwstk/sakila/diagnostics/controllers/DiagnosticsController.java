@@ -13,4 +13,6 @@ public class DiagnosticsController {
     public ResponseEntity status(){
         return ResponseEntity.ok("ALIVE");
     }
+
+
 }

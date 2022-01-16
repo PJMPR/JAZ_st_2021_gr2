@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "sakila.diagnostics.service.name",
+      "type": "java.lang.String",
+      "description": "Description for sakila.diagnostics.service.name."
+  }
+] }
