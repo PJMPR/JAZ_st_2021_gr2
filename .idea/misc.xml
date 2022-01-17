@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/lab07/demo/demo" />
+    <file type="web" url="file://$PROJECT_DIR$/lab08/demo/demo" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/lab01/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/lab02/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/lab03/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/lab04/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/lab05/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/lab07/demo/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/lab08/demo/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/lab09/demo/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/lab10/Sakila/sakila-data/pom.xml" />
+        <option value="$PROJECT_DIR$/lab10/Sakila/sakila-diagnostics/pom.xml" />
+        <option value="$PROJECT_DIR$/lab10/Sakila/sakila-films-updater/pom.xml" />
+        <option value="$PROJECT_DIR$/lab10/Sakila/sakila-business-logic/pom.xml" />
+        <option value="$PROJECT_DIR$/lab10/Sakila/sakila-report-service/pom.xml" />
+        <option value="$PROJECT_DIR$/lab11/Sakila/sakila-data/pom.xml" />
+        <option value="$PROJECT_DIR$/lab11/Sakila/sakila-diagnostics/pom.xml" />
+        <option value="$PROJECT_DIR$/lab11/Sakila/sakila-films-updater/pom.xml" />
+        <option value="$PROJECT_DIR$/lab11/Sakila/sakila-business-logic/pom.xml" />
+        <option value="$PROJECT_DIR$/lab11/Sakila/sakila-report-service/pom.xml" />
+        <option value="$PROJECT_DIR$/lab12/Sakila/sakila-data/pom.xml" />
+        <option value="$PROJECT_DIR$/lab12/Sakila/sakila-diagnostics/pom.xml" />
+        <option value="$PROJECT_DIR$/lab12/Sakila/sakila-films-updater/pom.xml" />
+        <option value="$PROJECT_DIR$/lab12/Sakila/sakila-business-logic/pom.xml" />
+        <option value="$PROJECT_DIR$/lab12/Sakila/sakila-report-service/pom.xml" />
+        <option value="$PROJECT_DIR$/lab12/Sakila/sakila-diagnostics-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
+</project>

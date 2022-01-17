@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JAZ_st_2021_gr2.iml" filepath="$PROJECT_DIR$/.idea/JAZ_st_2021_gr2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab02/demo/annotationsdemo.iml" filepath="$PROJECT_DIR$/lab02/demo/annotationsdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab03/demo/annotationsdemo (1).iml" filepath="$PROJECT_DIR$/lab03/demo/annotationsdemo (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab04/demo/cachedemo.iml" filepath="$PROJECT_DIR$/lab04/demo/cachedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab07/demo/demo/demo.iml" filepath="$PROJECT_DIR$/lab07/demo/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab08/demo/demo/demo (1).iml" filepath="$PROJECT_DIR$/lab08/demo/demo/demo (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab09/demo/demo/demo (2).iml" filepath="$PROJECT_DIR$/lab09/demo/demo/demo (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab01/demo/reflectionsdemo.iml" filepath="$PROJECT_DIR$/lab01/demo/reflectionsdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab05/demo/safeinvoker.iml" filepath="$PROJECT_DIR$/lab05/demo/safeinvoker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab10/Sakila/sakila-business-logic/sakila-business-logic.iml" filepath="$PROJECT_DIR$/lab10/Sakila/sakila-business-logic/sakila-business-logic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab11/Sakila/sakila-business-logic/sakila-business-logic (1).iml" filepath="$PROJECT_DIR$/lab11/Sakila/sakila-business-logic/sakila-business-logic (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab12/Sakila/sakila-business-logic/sakila-business-logic (2).iml" filepath="$PROJECT_DIR$/lab12/Sakila/sakila-business-logic/sakila-business-logic (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab10/Sakila/sakila-data/sakila-data.iml" filepath="$PROJECT_DIR$/lab10/Sakila/sakila-data/sakila-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab11/Sakila/sakila-data/sakila-data (1).iml" filepath="$PROJECT_DIR$/lab11/Sakila/sakila-data/sakila-data (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab12/Sakila/sakila-data/sakila-data (2).iml" filepath="$PROJECT_DIR$/lab12/Sakila/sakila-data/sakila-data (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab10/Sakila/sakila-diagnostics/sakila-diagnostics.iml" filepath="$PROJECT_DIR$/lab10/Sakila/sakila-diagnostics/sakila-diagnostics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab11/Sakila/sakila-diagnostics/sakila-diagnostics (1).iml" filepath="$PROJECT_DIR$/lab11/Sakila/sakila-diagnostics/sakila-diagnostics (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab12/Sakila/sakila-diagnostics/sakila-diagnostics (2).iml" filepath="$PROJECT_DIR$/lab12/Sakila/sakila-diagnostics/sakila-diagnostics (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab12/Sakila/sakila-diagnostics-service/sakila-diagnostics-service.iml" filepath="$PROJECT_DIR$/lab12/Sakila/sakila-diagnostics-service/sakila-diagnostics-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab10/Sakila/sakila-films-updater/sakila-films-updater.iml" filepath="$PROJECT_DIR$/lab10/Sakila/sakila-films-updater/sakila-films-updater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab11/Sakila/sakila-films-updater/sakila-films-updater (1).iml" filepath="$PROJECT_DIR$/lab11/Sakila/sakila-films-updater/sakila-films-updater (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab12/Sakila/sakila-films-updater/sakila-films-updater (2).iml" filepath="$PROJECT_DIR$/lab12/Sakila/sakila-films-updater/sakila-films-updater (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab10/Sakila/sakila-report-service/sakila-report-service.iml" filepath="$PROJECT_DIR$/lab10/Sakila/sakila-report-service/sakila-report-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab11/Sakila/sakila-report-service/sakila-report-service (1).iml" filepath="$PROJECT_DIR$/lab11/Sakila/sakila-report-service/sakila-report-service (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab12/Sakila/sakila-report-service/sakila-report-service (2).iml" filepath="$PROJECT_DIR$/lab12/Sakila/sakila-report-service/sakila-report-service (2).iml" />
+    </modules>
+  </component>
+</project>
