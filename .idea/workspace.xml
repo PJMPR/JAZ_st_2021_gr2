@@ -10,7 +10,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="lab11/maciej_dubowik/s22641/dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,6 +23,14 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="lab11/kacper_kamm/s23045/dev" />
+                    <option name="lastUsedInstant" value="1642867180" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="lab11/maciej_dubowik/s22641/dev" />
+                    <option name="lastUsedInstant" value="1642867167" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="lab02/kacper_kamm/s23045/dev" />
                     <option name="lastUsedInstant" value="1642186076" />
