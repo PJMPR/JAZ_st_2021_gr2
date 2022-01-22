@@ -1,6 +1,6 @@
 package com.pjwstk.sakila.reports.controllers;
 
-import com.pjwstk.sakila.reports.selftest.SakilaDbConnectionSelftest;
+import com.pjwstk.sakila.logic.charts.builder.ChartType;
 import com.pjwstk.sakila.reports.services.CustomersServices;
 import com.pjwstk.sakila.reports.services.RequestedChartTypes;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.ByteArrayInputStream;
-import java.util.List;
+import java.io.IOException;
 import java.util.Locale;
 
 @Controller
@@ -40,31 +40,4 @@ public class CustomersController {
                     .contentType(MediaType.IMAGE_JPEG)
                     .body(inputStreamResource);
     }
-
-        @GetMapping("status")
-        public ResponseEntity isAlive(){
-            return ResponseEntity.ok("ALIVE");
-        }
-
-
-//    @GetMapping("selftest")
-//    public ResponseEntity selfTest(){
-//        return ResponseEntity.ok(List.of(
-//                new SelfTestResult("CheckStorageForLogs","", true, null),
-//                new SelfTestResult("CheckStorageForLogs","", true, null),
-//                new SelfTestResult("CheckStorageForLogs","", true, null),
-//                new SelfTestResult("CheckStorageForLogs","", true, null)
-//                ));
-//    }
-
-//        @GetMapping("selftest")
-//        public ResponseEntity selfTest(SakilaDbConnectionSelftest diskTest){
-//            return ResponseEntity.ok(List.of(
-////                new SelfTestResult("CheckStorageForLogs","Checking that there is more than 5% free storage", diskTest.passed(), null)
-//                    diskTest.execute()
-//
-//            ));
-//        }
-
-    }
-
+}
