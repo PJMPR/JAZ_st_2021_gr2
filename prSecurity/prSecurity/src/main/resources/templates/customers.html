@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Customers</title>
+</head>
+<body>
+<table>
+  <h2> C U S T O M E R S </h2>
+  <!-- </br>-->
+  <h4> id : name : surname : email </h4>
+  <tbody>
+  <tr th:each="customerDto:${customerDto}">
+    <td th:text="${customerDto.id}" />
+    <td th:text="${customerDto.name}"/>
+    <td th:text="${customerDto.surname}"/>
+    <td th:text="${customerDto.email}"/>
+
+    <td />
+  </tr>
+  </tbody>
+</table>
+</body>

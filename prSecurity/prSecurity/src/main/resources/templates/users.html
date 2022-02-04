@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Users</title>
+</head>
+<body>
+<table>
+  <h3>-  U S E R S -</h3>
+  <!-- </br>-->
+  <h4> id : name : login </h4>
+  <tbody>
+  <tr th:each="user:${users}">
+    <td th:text="${user.id}" />
+    <td th:text="${user.name}"/>
+    <td th:text="${user.login}"/>
+    <td />
+  </tr>
+  </tbody>
+</table>
+</body>
+
