@@ -1,19 +1,19 @@
 package com.prSecurity.controllers;
 
-
-import com.prSecurity.service.UsersRepository;
+import com.prSecurity.model.User;
 import com.prSecurity.service.UsersService;
-import com.prSecurity.Status;
-import com.prSecurity.User;
+import com.prSecurity.service.UsersRepository;
+import com.prSecurity.model.Status;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.stereotype.Controller;
 import javax.validation.Valid;
 import java.util.List;
 
-@RestController
+@Controller
 public class UserController {
     UsersRepository userRepository;
     UsersService userService;
@@ -65,7 +65,7 @@ public class UserController {
         }
         return Status.FAILURE;
     }
-    @DeleteMapping("/users/all")
+    @DeleteMapping("/users/alldel")
     public Status deleteUsers() {
         userRepository.deleteAll();
         return Status.SUCCESS;
@@ -75,5 +75,11 @@ public class UserController {
     public String showUserRegisterForm(Model model) {
         model.addAttribute("user", new User());
         return "logForm";
+    }
+
+    @GetMapping("/users")
+    public String showUsers() {
+        List<User> users = userService.getUsersFromRepo();
+        return "users";
     }
 }

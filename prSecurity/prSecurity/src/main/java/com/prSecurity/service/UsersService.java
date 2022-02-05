@@ -3,7 +3,7 @@ package com.prSecurity.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import java.util.List;
-import com.prSecurity.User;
+import com.prSecurity.model.User;
 
 @Component
 public class UsersService {
@@ -19,7 +19,7 @@ public class UsersService {
         return usersRepository.findById(id);
     }
 
-    public List<User> getUserFromRepo() {
+    public List<User> getUsersFromRepo() {
         return usersRepository.findAll();
     }
 

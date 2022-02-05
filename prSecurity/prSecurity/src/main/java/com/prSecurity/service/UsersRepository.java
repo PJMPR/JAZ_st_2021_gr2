@@ -1,10 +1,7 @@
 package com.prSecurity.service;
 
 import org.springframework.data.repository.CrudRepository;
-import com.prSecurity.User;
-import org.springframework.stereotype.Repository;
-import org.springframework.data.jpa.repository.JpaRepository;
-import lombok.NonNull;
+import com.prSecurity.model.User;
 
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.prSecurity;
+package com.prSecurity.model;
 
 public enum Status {
     SUCCESS,

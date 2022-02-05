@@ -1,4 +1,4 @@
-package com.prSecurity;
+package com.prSecurity.model;
 
 import lombok.Getter;
 import lombok.Setter;

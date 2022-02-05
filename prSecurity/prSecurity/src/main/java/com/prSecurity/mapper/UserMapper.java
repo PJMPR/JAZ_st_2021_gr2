@@ -1,7 +1,7 @@
 package com.prSecurity.mapper;
 
 import org.springframework.jdbc.core.RowMapper;
-import com.prSecurity.User;
+import com.prSecurity.model.User;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 

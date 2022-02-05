@@ -2,7 +2,7 @@ package com.prSecurity.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import com.prSecurity.CustomerDto;
+import com.prSecurity.model.CustomerDto;
 
 import java.util.List;
 import java.util.stream.Collectors;
